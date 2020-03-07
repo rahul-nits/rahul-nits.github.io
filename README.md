@@ -1,2 +1,2 @@
-# rahulsingh-nits.github.io
+# rahul-nits.github.io
 Rahul Singh
