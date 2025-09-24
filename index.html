@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
   <title>Rahul Singh</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,8 +46,33 @@
       font-size: 12px;
       letter-spacing: 5px;
   }
-  .navbar-nav  li a:hover {
+  .navbar-nav li a:hover {
       color: #1abc9c !important;
+  }
+  .timeline {
+      position: relative;
+      padding: 20px 0;
+  }
+  .timeline-item {
+      padding: 20px;
+      background-color: #555;
+      border-radius: 8px;
+      margin-bottom: 20px;
+  }
+  .project-card {
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      background-color: #555;
+  }
+  .achievement-item {
+      margin-bottom: 15px;
+  }
+  h4 {
+      font-weight: bold;
+  }
+  ul {
+      text-align: left;
   }
   </style>
 </head>
@@ -68,9 +92,13 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">WHO</a></li>
-        <li><a href="#what">WHAT</a></li>
-	<li><a href="#skills">SKILLS</a></li>
-       <!-- <li><a href="#where">WHERE</a></li>-->
+        <li><a href="#what">PROFILE</a></li>
+        <li><a href="#experience">EXPERIENCE</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#achievements">ACHIEVEMENTS</a></li>
+        <li><a href="#education">EDUCATION</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
   </div>
@@ -80,68 +108,216 @@
 <div class="container-fluid bg-1 text-center">
   <h3 class="margin">Who Am I?</h3>
   <img src="https://user-images.githubusercontent.com/44551363/138805312-dfcf4ab5-ee0e-4437-8a5e-ac668dd39712.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Rahul Profile picture" width="350" height="350">
-  <h3>Cloud Automation Engineer I</h3>
+  <h3>Infrastructure Platform Specialist</h3>
+  <p>Pune, India | rahul.nits17@gmail.com | (+91)7898422567</p>
 </div>
 
-<!-- Second Container -->
+<!-- Profile Section -->
 <div id="what" class="container-fluid bg-2 text-center">
-  <h3  class="margin">What Am I?</h3>
-  <p>Automation Engineer with 2 years of experience in SaltStack and Terraform. Proficient in designing and
-implementing efficient cloud automation solutions. Track record of streamlining workflows and enhancing
-operational efficiency. Strong collaborator and quick learner. Looking to contribute expertise to a forward thinking team.
-    <br> Also worked on automation using bash and shell scripting CI/CD pipeline, azure templates etc. &#128522 </p>
+  <h3 class="margin">Professional Profile</h3>
+  <p>Cloud automation and Infrastructure specialist with 4+ years of expertise in building and maintaining large-scale, cloud-based infrastructure and applications. Proven track record in automating operational processes, ensuring high availability and performance of production systems, and implementing DevOps best practices. Skilled in Azure cloud platforms, infrastructure as code, monitoring solutions, and incident management.</p>
 </div>
 
-<!-- Third Container -->
-<div id="skills" class="container-fluid bg-2 text-center">
-  <h3  class="margin">Responsibilities cum interest or skills?</h3>
-  <p>Infrastructure Management using Terraform (IaC)
-<br>Configuration Management using Saltstack
-<br>Continuous Integration/Continuous Deployment(CI/CD)
-<br>Python Programming
-<br>Data Structures and Algorithms
-<br>Docker, Containerization and Kubernetes
-<br>Azure and GCP as cloud platform
-<br>Shell Scripting
-<br>HashiCorp Packer
-<br>Cloud Services Management (Azure, GCP, Kubernetes)
-<br>Collaboration and Documentation
-<br>Problem Solving and Troubleshooting
-    <br>
-<br>
-  <p>Click to get <a href="Resume_rahul.pdf" style = 'color:Yellow;'>Resume &#128221</a>
- <br> 
- Click to Navigate to my <a href="https://github.com/rahul-nits" style = 'color:Yellow;'>Github </a><i class="fa fa-github"></i>
-  </p>
+<!-- Experience Section -->
+<div id="experience" class="container-fluid bg-2">
+  <div class="container">
+    <h3 class="margin text-center">Professional Experience</h3>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>Infrastructure Platform Specialist</h4>
+        <p><em>SLB (Previously Schlumberger), Pune, IN — 02/2025 – Present</em></p>
+        <ul>
+          <li>Ensure reliability and performance of cloud infrastructure supporting 50+ development teams with 99.9% uptime.</li>
+          <li>Established monitoring and alerting systems using GCP logging, improving mean time to detection (MTTD) by 60%.</li>
+          <li>Developed containerized VSTS build agent with Packer capability with approx. 85% fewer resource utilization.</li>
+          <li>Conducted root cause analysis for critical incidents and implemented preventive measures, reducing recurring incidents by 80%.</li>
+        </ul>
+      </div>
+      
+      <div class="timeline-item">
+        <h4>Cloud Automation Engineer II</h4>
+        <p><em>SLB, Pune, IN — 09/2023 – 02/2025</em></p>
+        <ul>
+          <li>Implemented Kubernetes based scaled job using Keda for Terraform remote executions reducing infrastructure cost by 99%.</li>
+          <li>Developed CI/CD pipelines for golden image creation using HashiCorp Packer with 99.99% compliance.</li>
+          <li>Implemented infrastructure as code using Terraform, managing 500+ cloud resources across multiple environments.</li>
+          <li>Upgraded Terraform Enterprise to v202502-2 and expanded adoption to 6 additional resources.</li>
+        </ul>
+      </div>
+      
+      <div class="timeline-item">
+        <h4>Cloud Automation Engineer</h4>
+        <p><em>SLB, Pune, IN — 07/2021 – 09/2023</em></p>
+        <ul>
+          <li>Developed multicloud reusable SaltStack modules, improving consistency by 90% and adoption by 80%.</li>
+          <li>Migrated SaltStack Enterprise to open-source, contributing to saving of USD 350K and reducing vendor lock-in.</li>
+          <li>Designed CI/CD pipelines for infrastructure provisioning with 20-minute average build time, improving deployment velocity.</li>
+          <li>Deployed maintenance website with Azure Storage, CDN, and Key Vault with 5-minute TTL.</li>
+          <li>Implemented comprehensive logging and monitoring solutions for infrastructure visibility.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
+<!-- Skills Section -->
+<div id="skills" class="container-fluid bg-3 text-center">
+  <h3 class="margin" style="color: #333;">Technical Skills</h3>
+  <div class="row">
+    <div class="col-sm-3">
+      <h4 style="color: #333;">Languages & Scripting</h4>
+      <p style="color: #555;">Python, Bash, PowerShell</p>
+    </div>
+    <div class="col-sm-3">
+      <h4 style="color: #333;">Infrastructure & Automation</h4>
+      <p style="color: #555;">Terraform, Packer, SaltStack, Ansible</p>
+    </div>
+    <div class="col-sm-3">
+      <h4 style="color: #333;">Cloud Platforms</h4>
+      <p style="color: #555;">Azure (VMs, Storage, Functions, ARM), GCP (MIG, Compute Engine, GKE)</p>
+    </div>
+    <div class="col-sm-3">
+      <h4 style="color: #333;">CI/CD</h4>
+      <p style="color: #555;">Azure DevOps, Jenkins, Git & GitHub</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <h4 style="color: #333;">Monitoring & Logging</h4>
+      <p style="color: #555;">Dynatrace, Prometheus</p>
+    </div>
+    <div class="col-sm-3">
+      <h4 style="color: #333;">Databases</h4>
+      <p style="color: #555;">PostgreSQL, MySQL</p>
+    </div>
+    <div class="col-sm-3">
+      <h4 style="color: #333;">Containerization</h4>
+      <p style="color: #555;">Docker, Kubernetes, AKS, GKE</p>
+    </div>
+    <div class="col-sm-3">
+      <h4 style="color: #333;">Operating Systems</h4>
+      <p style="color: #555;">Linux (Ubuntu, RHEL), Windows Server</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h4 style="color: #333;">Methodologies</h4>
+      <p style="color: #555;">Agile, DevOps, SRE Practices, Incident Management, Root Cause Analysis</p>
+    </div>
+  </div>
+</div>
 
-  <h1 id="where" class="heading">Contact Me</h1>
+<!-- Projects Section -->
+<div id="projects" class="container-fluid bg-2">
+  <div class="container">
+    <h3 class="margin text-center">Key Projects</h3>
+    
+    <div class="project-card">
+      <h4>Transforming SaltStack Enterprise to Open Source Salt</h4>
+      <p><em>SaltStack, Python, Linux, Shell Scripting</em></p>
+      <ul>
+        <li>Migrated SaltStack Enterprise to open-source, eliminating $350K annual license costs and boosting flexibility.</li>
+        <li>Developed robust automation workflows for server status, job scheduling, and API-based job creation.</li>
+        <li>Achieved zero downtime through phased cutover and thorough testing.</li>
+        <li>Designed RBAC policies to secure infrastructure access by user role.</li>
+      </ul>
+    </div>
+    
+    <div class="project-card">
+      <h4>Automated Infrastructure Deployment for Regression Testing</h4>
+      <p><em>Terraform, Azure, CI/CD</em></p>
+      <ul>
+        <li>Designed an end-to-end automated solution with Terraform and Azure Pipelines.</li>
+        <li>Cut regression test time from 40 hours to 9 hours (77.5% reduction).</li>
+        <li>Reduced environment setup time from 4 hours to 30 minutes with 99.9% efficiency.</li>
+        <li>Integrated automation to provision and clean up agents dynamically.</li>
+      </ul>
+    </div>
+    
+    <div class="project-card">
+      <h4>ScaledJob Creation for On-Demand Azure Agents</h4>
+      <p><em>Kubernetes, Azure DevOps, Docker</em></p>
+      <ul>
+        <li>Built Kubernetes ScaledJobs to dynamically provision Azure DevOps agents for parallel builds.</li>
+        <li>Containerized agent setup (Docker + Ubuntu Jammy) for fast scaling on GKE.</li>
+        <li>Reduced agent provisioning costs by approx. 99% compared to static deployment.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Achievements Section -->
+<div id="achievements" class="container-fluid bg-3">
+  <div class="container">
+    <h3 class="margin text-center" style="color: #333;">Achievements & Leadership</h3>
+    
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="achievement-item">
+          <h4 style="color: #333;">Professional Achievements</h4>
+          <ul style="color: #555;">
+            <li>Awarded "Reward of Excellence" twice in the Above and Beyond category for outstanding contributions.</li>
+            <li>Recognized as a Top Performer (2024) for driving adoption and advancing development of Infrastructure as Code (IaC).</li>
+            <li>Secured 2nd place in a Hackathon by building a resilient application deployment solution, recognized for best practices and implementation.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col-sm-6">
+        <div class="achievement-item">
+          <h4 style="color: #333;">Leadership & Extracurricular Activities</h4>
+          <ul style="color: #555;">
+            <li>Conducted internal knowledge-sharing sessions on SaltStack and Terraform.</li>
+            <li>Led a Tech Bootcamp, mentoring peers in automation and cloud technologies.</li>
+            <li>Managed college tech and cultural festivals, demonstrating strong leadership and teamwork.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Education Section -->
+<div id="education" class="container-fluid bg-2">
+  <div class="container">
+    <h3 class="margin text-center">Education</h3>
+    
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="timeline-item">
+          <h4>B.Tech in Computer Science</h4>
+          <p>National Institute of Technology, Silchar</p>
+          <p>Assam, IN | 2017–2021</p>
+          <p>CGPA: 8.3/10</p>
+        </div>
+      </div>
+      
+      <div class="col-sm-6">
+        <div class="timeline-item">
+          <h4>Senior High School (+2) in PCM</h4>
+          <p>Mittal International Institute</p>
+          <p>Kota, Rajasthan | 2014–2016</p>
+          <p>Score: 80.8%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<footer id="contact" class="container-fluid bg-4 text-center">
+  <h3 class="margin">Contact Me</h3>
+  <p>rahul.nits17@gmail.com | (+91)7898422567 | Pune, India</p>
   <br>
   
+  <a class="btn icon" href="https://www.linkedin.com/in/rahulnits/" target="_blank" style="color: black; background: white;"><i class="fa fa-linkedin"></i></a>
+  <a class="btn icon" href="mailto:rahul.nits17@gmail.com" target="_blank" style="color: black; background: white;"><i class="fa fa-google"></i></a>
+  <a class="btn icon" href="https://www.facebook.com/profile.php?id=100006166929086" style="color: black; background: white;"><i class="fa fa-facebook"></i></a>
+  <a class="btn icon" href="https://instagram.com/rahul.s__ig" target="_blank" style="color: black; background: white;"><i class="fa fa-instagram"></i></a>
+  <a class="btn icon" href="https://twitter.com/rahul_ger8" target="_blank" style="color: black; background: white;"><i class="fa fa-twitter"></i></a>
+  <a class="btn icon" href="https://github.com/rahul-nits/" target="_blank" style="color: black; background: white;"><i class="fa fa-github"></i></a>
   
-  <a class="btn icon" href="https://www.linkedin.com/in/rahulnits/" target="_blank" style = 'color: black; background: white;'><i class="fa fa-linkedin"></i></a>
-  
-  
-  <a class="btn icon" href="mailto:rahul.nits17@gmail.com" target="_blank" style = 'color: black; background: white;'><i class="fa fa-google"></i></a>
-  
-  
-  <a class="btn icon" href="https://www.facebook.com/profile.php?id=100006166929086"  style = 'color: black; background: white;'><i class="fa fa-facebook"></i></a>
-  
-  <a class="btn icon" href="https://instagram.com/rahul.s__ig" target="_blank" style = 'color: black; background: white;'><i class="fa fa-instagram"></i></a>
-  
-  
-  
-  <a class="btn icon" href="https://twitter.com/rahul_ger8" target="_blank" style = 'color: black; background: white;'><i class="fa fa-twitter"></i></a>
-  
-  
-  
-  
- <!-- <a class="btn icon" href="https://github.com/rahul-nits/" target="_blank" style = 'color: black; background: white;'><i class="fa fa-github"></i></a> -->
-  
-  
+  <p class="margin-top: 20px;">Click to get <a href="Resume_rahul.pdf" style="color:Yellow;">Resume &#128221;</a></p>
 </footer>
 
 </body>
